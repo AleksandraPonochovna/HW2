@@ -18,11 +18,6 @@ public class MathExpression {
     }
 
     public boolean check (float firstNumber, float secondNumber, float result) {
-        if (Math.abs((firstNumber + secondNumber) - result) <= 0.0001) {
-            return true;
-        }
-         else {
-            return false;
-        }
+        return Math.abs((firstNumber + secondNumber) - result) <= 0.0001);
     }
 }

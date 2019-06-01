@@ -2,10 +2,10 @@ package com.company;
 
 import java.util.Scanner;
 
-public class FlipBit {
+public class Main {
 
     public static void main(String[] args) {
-        FlipBit start = new FlipBit();
+        Main start = new Main();
         Scanner input = new Scanner(System.in);
         System.out.print("Enter your number: ");
         int number = input.nextInt();
@@ -15,6 +15,6 @@ public class FlipBit {
     }
 
     public int flipBit(int value, int bitIndex) {
-        return value ^ (1 << bitIndex-1);
+        return value ^ (1 << bitIndex - 1);
     }
 }

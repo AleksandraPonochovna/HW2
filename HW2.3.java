@@ -3,7 +3,7 @@ package com.company;
 import java.util.Scanner;
 
 public class MathExpression {
-
+    final double epsilon = 0.0001;
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         MathExpression start = new MathExpression();
@@ -18,6 +18,6 @@ public class MathExpression {
     }
 
     public boolean check (float firstNumber, float secondNumber, float result) {
-        return Math.abs((firstNumber + secondNumber) - result) <= 0.0001);
+        return Math.abs((firstNumber + secondNumber) - result) <= epsilon);
     }
 }

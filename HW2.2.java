@@ -13,16 +13,6 @@ public class LeapYear {
     }
 
     public static int leapYearCount(int year) {
-        if (year >= 0 & year <= 2019) {
-            if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
-                year = year / 4;
-            } else {
-                year = 0;
-            }
-        } else {
-            System.out.println("Error! The year must be from 0 to 2019! ");
-            year = 0;
-        }
-        return year;
+        return year / 4 + year / 400 - year / 100;
     }
 }

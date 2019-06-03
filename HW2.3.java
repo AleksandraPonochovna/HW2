@@ -3,7 +3,7 @@ package com.company;
 import java.util.Scanner;
 
 public class MathExpression {
-    final double epsilon = 0.0001;
+    private static final double epsilon = 0.0001;
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         MathExpression start = new MathExpression();
